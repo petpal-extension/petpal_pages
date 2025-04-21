@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Spotlight Success</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md text-center">
+        <div class="mb-6">
+            <svg class="w-16 h-16 text-green-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+        </div>
+        <h1 class="text-3xl font-bold text-green-600 mb-4">Pet Spotlight Success!</h1>
+        <p class="text-gray-600 mb-6">Your pet is now in the spotlight! Thank you for sharing your wonderful pet with the PetPal community.</p>
+        <div class="mb-6">
+            <div class="bg-indigo-50 p-4 rounded-lg">
+                <p class="text-indigo-700 font-medium">Your pet will be featured in the PetSpotlight carousel for the duration you selected. Open the PetPal extension to see your pet shine!</p>
+            </div>
+        </div>
+        <button id="close" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition duration-200">
+            Close Window
+        </button>
+    </div>
+    <script>
+        document.getElementById('close').addEventListener('click', function() {
+            window.close();
+        });
+    </script>
+</body>
+</html>
